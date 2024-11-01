@@ -3,7 +3,6 @@ import { Cancel as CancelIcon, Delete as DeleteIcon, Edit as EditIcon, Save as S
 import { addPlayer, cancelEdit, deletePlayer, editPlayer, savePlayer, updateEditedName } from "../redux/slice/playerSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-import AddIcon from "@mui/icons-material/Add";
 import { Link as RouterLink } from "react-router-dom";
 import { useRef, useState } from "react";
 
@@ -58,9 +57,9 @@ function HomePage() {
         </Typography>
         <List
           sx={{
-            flexGrow: 1, // Allows the list to take all available space within this section
+            flexGrow: 1,
             mb: 2,
-            maxHeight: "100%", // Ensures list doesn’t exceed available space
+            maxHeight: "100%",
             overflow: "auto",
           }}
         >
@@ -114,7 +113,6 @@ function HomePage() {
         p={2}
         sx={{
           backgroundColor: "#3d405f",
-          flexShrink: 0, // Prevents this section from shrinking
         }}
         gap={2}
       >

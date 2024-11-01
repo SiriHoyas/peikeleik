@@ -45,22 +45,14 @@ function HomePage() {
   };
 
   return (
-    <Grid container direction="column" m="0 auto" width="100%" height="100vh" flexWrap={"nowrap"}>
+    <Grid container direction="column" m="0 auto" width="100%" height={"100%"} flexWrap={"nowrap"}>
       <Grid container justifyContent="center" mt={3}>
         <Typography component="h1" variant="gameTypeHeading">
           Peikeleik
         </Typography>
       </Grid>
 
-      {/* Player List Section */}
-      <Grid
-        container
-        direction="column"
-        px={2}
-        flexWrap={"nowrap"}
-        flexGrow={1} // Makes this section take up remaining vertical space
-        overflow="hidden" // Prevents the overall grid from expanding when there's overflow
-      >
+      <Grid container direction="column" px={2} flexWrap={"nowrap"} flexGrow={1} overflow="hidden">
         <Typography variant="homePageLabel" sx={{ fontFamily: "'New Amsterdam', sans-serif", fontWeight: 100, fontSize: "24px" }}>
           Spillere:
         </Typography>

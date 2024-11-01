@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 function Layout() {
   return (
-    <Grid container sx={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+    <Grid container sx={{ height: "100vh", display: "flex", flexDirection: "column" }}>
       <Grid
         sx={{
           flexGrow: 1,
